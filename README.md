@@ -14,5 +14,5 @@ For this entire thing to work we need the following:
 2. Dynamic accounts repo where Jenkins credentials, Kubernetes accounts & AWS credentials are stored.
 2. Specify the Jenkins URL in the config file under ci.jenkins.masters.address; Jenkins credentials shall be encoded and specified in the Dynamic accounts repo.
 3. OES helm chart that goes with this
-3. Dynamic account git repo that exists and url fed via opsmx-gitops-secret.yaml file in oes helm chart.
+3. Dynamic account git repo (https://github.com/OpsMx/gitops-accounts-sample) that exists and url fed via opsmx-gitops-secret.yaml file in oes helm chart.
 4. A pipeline can be created in spinnaker using pipeline-redeploy-hal.json that shall be triggered whenever changes are made to this repo.
