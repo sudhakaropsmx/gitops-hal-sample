@@ -350,7 +350,10 @@ deploymentConfigurations:
       accounts: []
     github:
       enabled: false
-      accounts: []
+      accounts:
+      - name: sudhakar
+        username: sudhakaropsmx
+        token: ajsdhgfjkahsdfjhbasd
     gitlab:
       enabled: false
       accounts: []
