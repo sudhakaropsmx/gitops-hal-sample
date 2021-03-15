@@ -280,6 +280,11 @@ deploymentConfigurations:
         address: "<JENKINS_URL>"
         username: "${jenkins.username}"
         password: "${jenkins.password}"
+      - name: "jenkinstest112"
+        permissions: {}
+        address: "http://www.localhost.com"
+        username: "test"
+        token: "3vDw13lOPOP06JhI3gNzgw=="
     travis:
       enabled: false
       masters: []
