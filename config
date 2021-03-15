@@ -357,9 +357,6 @@ deploymentConfigurations:
       - name: "testgithub14"
         username: "gittest33"
         token: "18+KH/EEQWJ71xCuatlbALkPB2FZzUpiF7tvYPP/Bag="
-      - name: "githalll"
-        username: "gittest"
-        token: "18+KH/EEQWJ71xCuatlbALkPB2FZzUpiF7tvYPP/Bag="
     gitlab:
       enabled: false
       accounts: []
