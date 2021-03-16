@@ -280,6 +280,11 @@ deploymentConfigurations:
         address: "<JENKINS_URL>"
         username: "${jenkins.username}"
         password: "${jenkins.password}"
+      - name: "demojenkins"
+        permissions: {}
+        address: "http://jenkins.opsmx.net:8181"
+        username: "opsmxdev"
+        token: "FTKbkkGQY/ICwqR/mbvr21smrS4LAhLdc7kNma87AqzxklVLl+7S58J2lhMSqs0l"
     travis:
       enabled: false
       masters: []
