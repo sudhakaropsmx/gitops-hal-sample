@@ -113,7 +113,7 @@ deploymentConfigurations:
       enabled: false
     vault:
       enabled: false
-    location: SPINNAKER_NAMESPACE
+    location: gitops-test-spin
     customSizing:
       spin-front50:
         limits:
@@ -239,7 +239,7 @@ deploymentConfigurations:
       bucket: spinnaker
       rootFolder: front50
       pathStyleAccess: true
-      endpoint: http://RELEASE_NAME-minio:9000
+      endpoint: http://gitops-test-spin-minio:9000
       accessKeyId: spinnakeradmin
       secretAccessKey: spinnakeradmin
     oracle: {}
@@ -303,11 +303,11 @@ deploymentConfigurations:
     apiSecurity:
       ssl:
         enabled: false
-      overrideBaseUrl: http://OVERRIDE_API_URL
+      overrideBaseUrl: http://gitops-test-spin-gate.opsmx.com
     uiSecurity:
       ssl:
         enabled: false
-      overrideBaseUrl: http://OVERRIDE_DECK_URL
+      overrideBaseUrl: http://gitops-test-spin.opsmx.com
     authn:
       oauth2:
         enabled: false
@@ -319,7 +319,7 @@ deploymentConfigurations:
         userAttributeMapping: {}
       ldap:
         enabled: true
-        url: ldap://RELEASE_NAME-openldap:389/dc=example,dc=org
+        url: ldap://gitops-test-spin-openldap:389/dc=example,dc=org
         userDnPattern: cn={0}
       x509:
         enabled: false
