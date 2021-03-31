@@ -8,7 +8,5 @@ spring:
       server:
         git:
           uri: "https://github.com/sudhakaropsmx/dynamicAccount.git"
-          username: "sudhakaropsmx"
-          password: "acb3545fbdba6350f9fca75e578813b31db4fb22"
-          basedir: "/tmp/config-repo"
-          refresh-rate: 10
+          username: ""
+          password: "07deb19ac16d33b27e1d8fb071b7e816ab1774b0"
