@@ -308,11 +308,11 @@ deploymentConfigurations:
     apiSecurity:
       ssl:
         enabled: false
-      overrideBaseUrl: "http://gitops-test-spin-gate.opsmx.com"
+      overrideBaseUrl: "https://gitops-test-spin-gate.opsmx.com"
     uiSecurity:
       ssl:
         enabled: false
-      overrideBaseUrl: "http://gitops-test-spin.opsmx.com"
+      overrideBaseUrl: "https://gitops-test-spin.opsmx.com"
     authn:
       oauth2:
         enabled: false
