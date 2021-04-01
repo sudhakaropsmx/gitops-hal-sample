@@ -7,15 +7,30 @@ deploymentConfigurations:
       enabled: false
       accounts: []
     aws:
-      enabled: false
-      accounts: []
+      enabled: true
+      accounts:
+      - name: "awsdemo"
+        requiredGroupMembership: []
+        providerVersion: "v1"
+        permissions: {}
+        accountId: "732813442182"
+        assumeRole: "role/spinEC2Managed"
+        lifecycleHooks: []
+        regions:
+        - name: "us-east-1"
       bakeryDefaults:
         baseImages: []
+        awsAccessKey: "AKIA2VHYVXSDAC6OIUUV"
+        awsSecretKey: "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"
       defaultKeyPairTemplate: "{{name}}-keypair"
       defaultRegions:
       - name: "us-west-2"
+      - name: "us-east-1"
       defaults:
         iamRole: "BaseIAMRole"
+      primaryAccount: "awsdemo"
+      accessKeyId: "AKIA2VHYVXSDAC6OIUUV"
+      secretAccessKey: "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"
     ecs:
       enabled: false
       accounts: []
