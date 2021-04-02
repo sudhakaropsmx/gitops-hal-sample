@@ -7,7 +7,7 @@ deploymentConfigurations:
       enabled: false
       accounts: []
     aws:
-      enabled: false
+      enabled: true 
       accounts: []
       bakeryDefaults:
         baseImages: []
